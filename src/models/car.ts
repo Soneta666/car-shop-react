@@ -6,6 +6,7 @@ import { IYear } from "./year";
 export interface ICar{
     id: number,
     name: string,
+    photo: string,
     yearId: number,
     price: number,
     makeId: number,

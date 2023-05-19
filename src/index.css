@@ -12,15 +12,16 @@ code {
     monospace;
 }
 
-.Register {
+.Reg-Log {
   margin-top: 100px;
+  margin-bottom: 100px;
 }
-.Register h2 {
+.Reg-Log h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-.Register form {
+.Reg-Log form {
   max-width: 400px;
   margin: auto;
   display: flex;

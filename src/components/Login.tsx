@@ -1,10 +1,10 @@
 import { Alert, Box, Button, Collapse, IconButton, Snackbar, TextField, FilledInput, FormControl, InputLabel, InputAdornment } from "@mui/material";
 import { useForm } from "react-hook-form";
 import { useEffect, useState } from "react";
-import { IRegisterModel } from "../models/Register";
 import { VisibilityOff, Visibility } from '@mui/icons-material';
+import { ILoginModel } from "../models/Login";
 
-export default function Register() {
+export default function Login() {
 
     const [open, setOpen] = useState(false);
 
@@ -12,9 +12,9 @@ export default function Register() {
         register,
         handleSubmit, 
         formState: { errors },
-    } = useForm<IRegisterModel>();
+    } = useForm<ILoginModel>();
 
-    const onSubmit = (user: IRegisterModel) => {
+    const onSubmit = (user: ILoginModel) => {
         console.log(`User ${user.Username} ${user.Password}`);
         setOpen(true);
     }
@@ -39,11 +39,10 @@ export default function Register() {
                     </Snackbar>
                 </Box>
 
-                <h2>Register</h2>
+                <h2>Login</h2>
                 <form onSubmit={handleSubmit(onSubmit)}>
 
                     <TextField  {...register("Username")} name="Username" type="text" label="Username" variant="filled" />
-                    <TextField  {...register("Email")} name="Email" type="email" label="Email" variant="filled" />
                  
                     <FormControl variant="filled">
                         <InputLabel htmlFor="filled-adornment-password">Password</InputLabel>
@@ -64,14 +63,8 @@ export default function Register() {
                             }
                         />
                     </FormControl>
-                    
-                    <TextField  {...register("PhoneNumber")} name="PhoneNumber" type="text" label="PhoneNumber" variant="filled" />
-                    <TextField  {...register("Birthday")} name="Birthday" type="date" variant="filled" />
-                    <TextField  {...register("Photo")} name="Photo" type="text" label="Photo" variant="filled" />
-                    <TextField  {...register("FirstName")} name="FirstName" type="text" label="FirstName" variant="filled" />
-                    <TextField  {...register("LastName")} name="LastName" type="text" label="LastName" variant="filled" />
 
-                    <Button variant="outlined" type="submit">Register</Button>
+                    <Button variant="outlined" type="submit">Login</Button>
                 </form>
             </div>
         </>

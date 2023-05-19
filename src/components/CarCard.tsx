@@ -7,21 +7,21 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { ICar } from '../models/car';
 
-export default function CarCard({name, price, model} : ICar) {
+export default function CarCard({name, photo, price, model} : ICar) {
   return (
     <Card sx={{ maxWidth: 345 }}>
-      {/* <CardMedia
+      <CardMedia
         sx={{ height: 140 }}
-        image="/static/images/cards/contemplative-reptile.jpg"
-        title="green iguana"
-      /> */}
+        image={photo}
+        title={name}
+      />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
           {name}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        {/* <Typography variant="body2" color="text.secondary">
           {model.description}
-        </Typography>
+        </Typography> */}
       </CardContent>
       <CardActions>
         {/* <Button size="small">Share</Button>
