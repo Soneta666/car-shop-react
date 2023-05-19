@@ -11,3 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.Register {
+  margin-top: 100px;
+}
+.Register h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Register form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
