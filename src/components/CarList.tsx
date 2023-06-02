@@ -19,7 +19,7 @@ export default function CarList() {
     }, []);
 
     return (
-        <>
+        <div id="list">
             <h2>Car List</h2>
             <Grid container spacing={2}>
                 {cars?.map((c, i) =>
@@ -28,6 +28,6 @@ export default function CarList() {
                     </Grid>
                 )}
             </Grid>
-        </>
+        </div>
     );
 }

@@ -21,3 +21,17 @@ export interface ICar{
     engine: IEngine,
     year: IYear
 }
+
+export interface Car{
+    id: number,
+    name: string,
+    photo: string,
+    yearId: number,
+    price: number,
+    makeId: number,
+    modelId: number,
+    engineId: number,
+    mileage: number,
+    maxSpeed: number,
+    secondSpeed: number,
+}

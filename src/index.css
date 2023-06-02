@@ -12,19 +12,73 @@ code {
     monospace;
 }
 
-.Reg-Log {
+.form {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-.Reg-Log h2 {
+.form h2 {
   text-align: center;
   text-transform: uppercase;
 }
 
-.Reg-Log form {
+.form form {
   max-width: 400px;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+#header{
+  background-color: rgb(85, 85, 85);
+}
+
+#notFound{
+  width: 100vw;
+  height: 80ch;
+}
+
+#list{
+  margin: 50px;
+}
+
+
+#details{
+  background-color: rgb(220, 220, 220);
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 25px;
+  padding: 0 250px;
+  margin: auto;
+  width: max-content;
+}
+#details img{
+  width: 500px;
+}
+#price{
+  font-weight: bold;
+  margin: 10px;
+}
+.a{
+  margin: 20px;
+}
+.a span{
+  font-weight: bold;
+}
+
+.e{
+  background-color: rgb(185, 185, 185);
+  border: 1px solid rgb(171, 171, 171);
+  border-radius: 25px;
+  padding: 15px;
+  margin: auto;
+  max-width: 600px;
+  width: max-content;
+}
+.e span{
+  font-weight: bold;
+}
+
+.cardLink{
+  text-decoration: none;
+  color:black;
 }

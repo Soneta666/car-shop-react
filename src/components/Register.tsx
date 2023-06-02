@@ -29,7 +29,7 @@ export default function Register() {
 
     return (
         <>
-            <div className="Reg-Log">
+            <div className="form">
                 <Box sx={{ width: '100%' }}>
                     <Snackbar open={open} autoHideDuration={6000}
                     anchorOrigin={{ vertical: "top", horizontal: "center" }}>
